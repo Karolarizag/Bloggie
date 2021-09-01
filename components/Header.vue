@@ -1,11 +1,13 @@
 <template>
-  <div height="50">
-    <v-app-bar flat app color="first">
-      <v-btn text color="white">Bloggie</v-btn>
-      <v-spacer></v-spacer>
-      <v-btn icon color="third"><v-icon>mdi-magnify</v-icon></v-btn>
-      <v-btn text color="third">Log in</v-btn>  
-      <v-btn text color="third">Sign up</v-btn>  
+  <div>
+    <v-app-bar flat app class="d-flex justify-center" color="black" fixed>
+      <v-btn text color="white">News</v-btn>
+      <v-btn text color="white">Politics</v-btn>
+      <v-btn text color="white">Entertaiment</v-btn>
+      <v-btn text color="white">Life</v-btn>
+      <v-btn text color="white">Personal</v-btn>
+      <v-btn text color="white">Shopping</v-btn>
+      <v-btn text color="white">Video</v-btn>
     </v-app-bar>
   </div>
 </template>

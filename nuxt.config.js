@@ -61,11 +61,7 @@ export default {
     theme: {
       themes: {
         light: {
-          'first': '#FFB402', // Yellow
-          'second': '#E6D693', // Light yellow
-          'third': '#32004F', //  Dark Violet
-          'fourth': '#D62CE6', // Violet
-          'fifth': '#EFA8FF', // Lila 
+          'first': '#ff4c65', // Pink
         }
       }
     }
