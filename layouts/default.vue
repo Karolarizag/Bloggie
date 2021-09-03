@@ -1,9 +1,9 @@
 <template>
   <v-app>
   <v-main>
+    <Header-scroll />
     <Bloggie />
-    <Header v-on:scroll="isScrolling = !isScrolling" v-if="!isScrolling" />
-    <Header-scroll v-if="isScrolling" />
+    <Header />
     <v-container>
       <Nuxt />
     </v-container>
@@ -11,12 +11,12 @@
   </v-app>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      isScrolling: false, 
-    }
-  },
-}
-</script>
+// <script>
+// export default {
+//   data () {
+//     return {
+//       isScrolling: false, 
+//     }
+//   },
+// }
+// </script>

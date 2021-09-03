@@ -1,19 +1,46 @@
 <template>
-  <div>
-    <v-app-bar flat app class="d-flex justify-center" color="black" fixed>
-      <v-btn text color="white">News</v-btn>
-      <v-btn text color="white">Politics</v-btn>
-      <v-btn text color="white">Entertaiment</v-btn>
-      <v-btn text color="white">Life</v-btn>
-      <v-btn text color="white">Personal</v-btn>
-      <v-btn text color="white">Shopping</v-btn>
-      <v-btn text color="white">Video</v-btn>
-    </v-app-bar>
-  </div>
+    <v-toolbar flat class="d-flex justify-center fixed-bar" color="black" >  
+      <v-btn v-for="(item, idx) in items" :key="idx" :to="{path: `${item.path}`}" text color="white">{{item.name}}</v-btn>
+    </v-toolbar>
 </template>
 
 <script>
 export default {
   name: 'Header',
+  data() {
+    return {
+      menu: false,
+      items: [
+        {
+          name: "News",
+          path: '/news'
+        },
+        {
+          name: 'Politics', 
+          path: '/politics'
+        },
+        {
+          name: 'Entertaiment', 
+          path: '/entertaiment'
+        }, 
+        {
+          name: 'Life', 
+          path: '/life'
+        }, 
+        {
+          name: 'Personal', 
+          path: '/personal'
+        }, 
+        {
+          name: 'Shopping', 
+          path: '/shopping'
+        }, 
+        {
+          name: 'Video',
+          path: '/video'
+        }
+      ]
+    }
+  },
 }
 </script>
