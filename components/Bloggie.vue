@@ -115,11 +115,11 @@ export default ({
         {
           name: 'Shopping', 
           path: '/shopping'
-        }, 
-        {
-          name: 'Video',
-          path: '/video'
         }
+        // {
+        //   name: 'Video',
+        //   path: '/video'
+        // }
       ]
     }
   },
