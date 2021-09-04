@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container app fluid class="pa-0">
     <v-app-bar fixed flat color="black" >
       <v-row>
         <v-col cols="1">
@@ -27,13 +27,13 @@
 
     <v-navigation-drawer
         v-model="menu"
-        absolute
+        app
         temporary
         dark
         width="400"
         color="grey darken-4">
         <v-list-item>
-          <v-btn width="5" class="mt-10" text dark @click="menu = false"><h1>X</h1></v-btn>
+          <v-btn class="mt-10 ml-3" icon dark @click="menu = false"><v-icon>mdi-close</v-icon></v-btn>
         </v-list-item>
         <div class="px-5 py-10">
           <v-divider dark />
@@ -66,7 +66,7 @@
         </div>
         <v-row>
           <v-col class="d-flex justify-center">
-            <p style="color: white;">This is a practice project, inpired in HuffPost!</p>
+            <p style="color: white;" >This is a practice project, inpired in HuffPost!</p>
           </v-col>
         </v-row>
         <v-row class="mt-n8">
@@ -111,7 +111,7 @@ export default {
         {
           name: 'Shopping', 
           path: '/shopping'
-        }
+        }, 
         // {
         //   name: 'Video',
         //   path: '/video'

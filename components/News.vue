@@ -1,6 +1,8 @@
 <template>
   <div class="mt-15">
-      <h1>NEWS</h1>
+      <NuxtLink :to="{path: `/news`}" style="color: black;">
+        <h1>NEWS</h1>
+      </NuxtLink>
       <v-divider />
       <div
         v-for="(item, idx) in category"

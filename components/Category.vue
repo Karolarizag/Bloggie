@@ -1,6 +1,8 @@
 <template>
   <div class="mt-15">
-      <h1>{{category[0].category.toUpperCase()}}</h1>
+      <NuxtLink :to="{path: `/${category[0].category.toLowerCase()}`}" style="color: black;">
+        <h1>{{category[0].category.toUpperCase()}}</h1>
+      </NuxtLink>
       <v-divider />
       <div
         v-for="(item, idx) in category"

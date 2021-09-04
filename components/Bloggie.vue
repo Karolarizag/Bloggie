@@ -30,14 +30,14 @@
 
      <v-navigation-drawer
         v-model="menu"
-        absolute
+        app
         temporary
         dark
         width="400"
         color="grey darken-4">
 
       <v-list-item>
-        <v-btn width="5" class="mt-10" text dark @click="menu = false"><h1>X</h1></v-btn>
+        <v-btn class="mt-10 ml-3" icon dark @click="menu = false"><v-icon>mdi-close</v-icon></v-btn>
       </v-list-item>
       <div class="px-5 py-10">
         <v-divider dark />

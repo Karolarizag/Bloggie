@@ -12,7 +12,7 @@
 
 <script>
 export default({
-  async asyncData ({ $axios, params }) {
+  async asyncData ({ $axios }) {
     const posts = await $axios.$get('/post')
     const politics = await $axios.$post('/post/category', {category: 'Politics'})
     const entertaiment = await $axios.$post('/post/category', {category: 'Entertaiment'})
