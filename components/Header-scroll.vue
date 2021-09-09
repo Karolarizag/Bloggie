@@ -52,13 +52,13 @@
             <p style="color: white;" class="mt-2">Follow us</p>
           </v-col>
           <v-col>
-            <v-btn icon dark><v-icon>mdi-facebook</v-icon></v-btn>
+            <v-btn icon dark href="https://www.facebook.com/HuffPost" target="blank"><v-icon>mdi-facebook</v-icon></v-btn>
           </v-col>
           <v-col>
-            <v-btn icon dark><v-icon>mdi-twitter</v-icon></v-btn>
+            <v-btn icon dark href="https://twitter.com/HuffPost" target="blank"><v-icon>mdi-twitter</v-icon></v-btn>
           </v-col>
           <v-col>
-            <v-btn icon dark><v-icon>mdi-instagram</v-icon></v-btn>
+            <v-btn icon dark href="https://www.instagram.com/HuffPost/" target="blank"> <v-icon>mdi-instagram</v-icon></v-btn>
           </v-col>
         </v-row>
         <div class="px-5 py-10">

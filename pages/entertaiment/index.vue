@@ -1,10 +1,10 @@
 <template>
-  <div class="d-flex wrap mt-15">
+  <div class="d-flex wrap mt-15 pa-n15">
     <PostCard 
       v-for="(item, id) in posts" 
       :key="id" 
       :post="item" 
-      class="mx-10"/>
+      class="mr-7"/>
   </div>
 </template>
 
