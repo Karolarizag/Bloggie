@@ -41,6 +41,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
@@ -71,5 +72,33 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  }, 
+
+  auth: {
+    redirect: {
+      login: '/',
+      logout: '/',
+      home: '/explore'
+    },
+    strategies: {
+      local: {
+        token: {
+          property: 'token',
+          global: true,
+          // required: true,
+          // type: 'Bearer'
+          type: false
+        },
+        user: {
+          property: 'user'
+          // autoFetch: true
+        },
+        endpoints: {
+          login: { url: '/auth/login', method: 'post' },
+          logout: false,
+          user: { url: '/auth/user', method: 'get' }
+        }
+      }
+    }
   }
 }
