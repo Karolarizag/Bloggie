@@ -5,7 +5,7 @@
     <Bloggie />
     <Header />
     <v-container>
-      <Nuxt />
+      <Nuxt class="px-5" />
     </v-container>
   </v-main>
   </v-app>
